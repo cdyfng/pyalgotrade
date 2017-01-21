@@ -18,8 +18,9 @@ def parameters_generator():
 if __name__ == '__main__':
     # Load the feed from the CSV files.
     feed = yahoofeed.Feed()
-    feed.addBarsFromCSV("dia", "dia-2009.csv")
-    feed.addBarsFromCSV("dia", "dia-2010.csv")
-    feed.addBarsFromCSV("dia", "dia-2011.csv")
+    feed.addBarsFromCSV("dia", "data/dia-2009-yahoofinance.csv")
+    feed.addBarsFromCSV("dia", "data/dia-2010-yahoofinance.csv")
+    feed.addBarsFromCSV("dia", "data/dia-2011-yahoofinance.csv")
 
     local.run(rsi2.RSI2, feed, parameters_generator())
+

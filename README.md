@@ -27,6 +27,7 @@ Main Features
  * Performance metrics like Sharpe ratio and drawdown analysis.
  * Handling Twitter events in realtime.
  * Event profiler.
+ 
  * TA-Lib integration.
 
 Installation
